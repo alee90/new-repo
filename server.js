@@ -8,6 +8,10 @@ var port = process.env.PORT || 3000;
 app.use(express.static('public'));
 app.use(morgan('dev'));
 
+app.get('/', function(req,res){
+	res.send('root');
+})
+
 // LISTEN
 app.listen(port);
 console.log('=============================');
