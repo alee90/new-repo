@@ -12,6 +12,10 @@ app.get('/', function(req,res){
 	res.send('root');
 })
 
+app.get('/joe',function(req,res){
+	res.send('forks');
+})
+
 // LISTEN
 app.listen(port);
 console.log('=============================');
